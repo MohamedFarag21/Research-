@@ -23,9 +23,9 @@ np.random.seed(seed)
 
 #-------------------------------Data Settings---------------------------------
 
-csv_file =  r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\anthroprotect\infos.csv"
-image_folder = r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\anthroprotect\tiles\s2"
-target_folder= r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\new_masks"
+csv_file =  r""
+image_folder = r""
+target_folder= r""
 
 train_ratio = 0.8
 batch_size = 4
@@ -171,7 +171,7 @@ pretrained_model = segmentation.deeplabv3_resnet50(pretrained=True)
 output_classes = 43
 input_channels = 256
 
-checkpoint_path = r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\checkpoint\allparm_CE_classindexedGT100.pth"
+checkpoint_path = r"~\allparm_CE_classindexedGT100.pth"
 
 def model_settings(pretrained_model, input_channels, output_classes, load_weights=False, weight_path=None):
     """
