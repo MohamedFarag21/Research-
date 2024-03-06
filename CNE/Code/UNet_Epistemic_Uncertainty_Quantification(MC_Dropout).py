@@ -26,9 +26,9 @@ np.random.seed(seed)
 
 #-------------------------------Data Settings---------------------------------#
 
-csv_file =  r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\anthroprotect\infos.csv"
-image_folder = r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\anthroprotect\tiles\s2"
-target_folder= r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\new_masks"
+csv_file =  r""
+image_folder = r""
+target_folder= r""
 
 train_ratio =  0.9
 batch_size = 8
@@ -177,7 +177,7 @@ input_channels = 10
 output_classes = 43
 channel_list = [input_channels, 64, 128, 256, 512]
 
-checkpoint_path = r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\checkpoint\Unet\Unet_dropout_10in_43out_80.pth"
+checkpoint_path = r"~\Unet_dropout_10in_43out_80.pth"
 
 def convblock(in_channels, out_channels, kernel_size = (3,3), padding='same'):
     """Convolutional block for Unet architecture used at Encoder and Decoder parts
