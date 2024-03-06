@@ -27,9 +27,9 @@ np.random.seed(seed)
 
 #-------------------------------Data Settings---------------------------------#
 
-csv_file =  r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\anthroprotect\infos.csv"
-image_folder = r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\anthroprotect\tiles\s2"
-target_folder= r"C:\Users\midok\OneDrive\Desktop\Imam_farag_paper\new_masks"
+csv_file =  r""
+image_folder = r""
+target_folder= r""
 
 train_ratio = 0.8
 batch_size = 12
@@ -451,7 +451,7 @@ def model_train(model, loader, num_epochs=100, save=False):
         # If save is True, save the model weights after each epoch
         if save:    
             if (epoch+1) % 2:
-                torch.save(model.state_dict(), f'C:/Users/midok/OneDrive/Desktop/Imam_farag_paper/checkpoint/Unet/Unet_dropout_10in_43out_{epoch+1}.pth')      
+                torch.save(model.state_dict(), f'~/Unet_dropout_10in_43out_{epoch+1}.pth')      
 
 model_train(model, loader, num_epochs=100, save=False)
 
